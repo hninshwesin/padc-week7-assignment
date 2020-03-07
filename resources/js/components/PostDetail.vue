@@ -1,7 +1,8 @@
 <template>
     <div>
+        <h1>Post Details</h1>
             <h2>Title: {{posts.title}}</h2>
-            <h1><router-link :to="{ name: 'detail' ,params: {post_id: posts.id}}">{{posts.title}}</router-link></h1>
+            <h1><router-link :to="{ name: 'detail' ,params: {post_id: posts.id}}">Edit</router-link></h1>
             <p>{{posts.excerpt}}</p>
     </div>
 </template>

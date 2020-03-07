@@ -21,7 +21,7 @@ export default [
         component: PostCreate,
     },
     {
-        path: '/vue/post/:post_id',
+        path: '/vue/post/detail/:post_id',
         name: 'detail',
         component: PostDetail,
         props: true,

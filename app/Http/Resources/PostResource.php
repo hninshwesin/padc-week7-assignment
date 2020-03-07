@@ -21,6 +21,7 @@ class PostResource extends JsonResource
             'id' => $this->id,
             'excerpt' => $this->excerpt,
             'title' => $this->title,
+            'category' => $this->categories->name,
             'content' => \nl2br($this->content),
             'author_name' => $this->author->name,
             'is_published' => $this->is_published

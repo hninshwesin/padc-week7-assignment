@@ -2182,6 +2182,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     post_id: {
@@ -38316,6 +38317,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h1", [_vm._v("Post Details")]),
+    _vm._v(" "),
     _c("h2", [_vm._v("Title: " + _vm._s(_vm.posts.title))]),
     _vm._v(" "),
     _c(
@@ -38326,7 +38329,7 @@ var render = function() {
           {
             attrs: { to: { name: "detail", params: { post_id: _vm.posts.id } } }
           },
-          [_vm._v(_vm._s(_vm.posts.title))]
+          [_vm._v("Edit")]
         )
       ],
       1
@@ -54739,7 +54742,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'create',
   component: _components_PostCreate_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
 }, {
-  path: '/vue/post/:post_id',
+  path: '/vue/post/detail/:post_id',
   name: 'detail',
   component: _components_PostDetail_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
   props: true

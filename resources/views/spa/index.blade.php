@@ -22,8 +22,10 @@
 </head>
 <body>
     <div id="app" class="container">
-        <post-list></post-list>
-        <!-- <app></app> -->
+{{--        <post-list></post-list>--}}
+{{--        <watcher-sample></watcher-sample>--}}
+{{--        <h1>This is spa</h1>--}}
+        <app></app>
     </div>
 </body>
 </html>

@@ -11,6 +11,12 @@ export default {
   },
   methods: {},
   computed: {},
-  watch: {}
+  watch: {
+      first_name: {
+          handler: function (val) {
+            this.full_name = `${val} ${this.last_name}`;
+          }
+      }
+  }
 };
 </script>

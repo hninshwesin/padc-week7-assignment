@@ -27,6 +27,8 @@ Vue.component('categories-select', require('./components/CategoriesSelect.vue').
 
 Vue.component('post-list', require('./components/PostList.vue').default);
 
+Vue.component('post-create', require('./components/PostCreate.vue').default);
+
 Vue.component('login-form', require('./components/LoginForm.vue').default);
 
 Vue.component('name-display', require('./components/NameDisplay.vue').default);

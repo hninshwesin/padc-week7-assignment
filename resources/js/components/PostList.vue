@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Post List will be here</h1>
+<!--    <h1>Post List will be here</h1>-->
     <div v-for="post in posts" :key="post.id">
-      <h1>{{post.title}}</h1>
+        <h1><router-link :to="{ name: 'detail' ,params: {post_id: post.id}}">{{post.title}}</router-link></h1>
       <p>{{post.excerpt}}</p>
     </div>
   </div>
@@ -21,7 +21,7 @@ export default {
       url : `/api/v1/post`
     };
   },
-  created() {     
+  created() {
     axios.get(this.url).then(this.init_data_handler);
   },
   methods: {

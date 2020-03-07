@@ -1,5 +1,7 @@
 import Login from './components/LoginForm.vue';
 import PostList from './components/PostList.vue';
+import PostCreate from "./components/PostCreate.vue";
+import PostDetail from "./components/PostDetail.vue";
 
 
 export default [
@@ -12,6 +14,17 @@ export default [
         path: '/vue/posts',
         name: 'posts',
         component: PostList,
+    },
+    {
+        path: '/vue/create',
+        name: 'create',
+        component: PostCreate,
+    },
+    {
+        path: '/vue/post/:post_id',
+        name: 'detail',
+        component: PostDetail,
+        props: true,
     },
 
 ]
